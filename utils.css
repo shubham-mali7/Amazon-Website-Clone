@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-style {
+  color: #ccc;
+  cursor: pointer;
+}
+.bold-words {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fff;
+}
