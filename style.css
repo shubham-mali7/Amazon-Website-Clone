@@ -57,6 +57,11 @@ header {
   display: flex;
   align-items: center;
 }
+
+.info-section {
+  /* border: 2px solid yellow; */
+  display: flex;
+}
 #drp-all {
   width: 30%;
   height: 50px;
@@ -298,5 +303,20 @@ footer {
 @media only screen and (max-width: 550px) {
   body {
     background-color: chartreuse;
+  }
+  .info-section .dropdown {
+    display: inline-block;
+  }
+  .center-nav {
+    display: block;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    margin-top: 62px;
+  }
+
+  .info-section {
+    width: 360px;
+    display: flex;
   }
 }
