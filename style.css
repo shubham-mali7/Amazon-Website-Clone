@@ -61,7 +61,7 @@ header {
   font-size: 13px;
   font-weight: 400;
 }
-.india {
+.location {
   font-size: 14px;
   font-weight: 700;
 }
@@ -346,6 +346,68 @@ header {
 
 /* end of main section  */
 
+/* weather api ------------------*/
+
+#weatherCard {
+  width: 50%;
+  margin-top: 1.5%;
+  padding: 1.5% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  background: var(--secondary-color);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+#weatherCardTitle {
+  background: #232f3e;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+#weatherCardbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+#weatherIcon {
+  background: rgb(204 204 204);
+  border-radius: 1rem;
+}
+
+#weatherLocation {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weatherdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+#weatherDescription {
+  font-weight: 500;
+}
+
+#weatherCardFooter {
+  border-top: 2px dotted black;
+  padding-top: 2%;
+}
+/* weather api---End */
+
 /* Horizontal scroll section */
 .heading {
   position: absolute;
@@ -549,6 +611,10 @@ footer {
   }
   .inner-div {
     margin-top: 6%;
+  }
+
+  #weatherCard {
+    width: 85%;
   }
 }
 
