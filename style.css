@@ -10,6 +10,8 @@
   --title-color: #585858;
   --box-shadow: #00000029;
   --text-bar-color: black;
+  --wheather-title-color: #e7e9ea;
+  --weather-location: #232f3e;
 }
 
 .dark-theme {
@@ -18,6 +20,8 @@
   --title-color: #e7e9ea;
   --box-shadow: #f7f4f44f;
   --text-bar-color: #fff;
+  --wheather-title-color: #e7e9ea;
+  --weather-location: #e7e9ea;
 }
 
 body {
@@ -61,7 +65,7 @@ header {
   font-size: 13px;
   font-weight: 400;
 }
-.location {
+#india {
   font-size: 14px;
   font-weight: 700;
 }
@@ -369,7 +373,7 @@ header {
   text-align: center;
   padding: 0.2rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--wheather-title-color);
 }
 
 #weatherCardbody {
@@ -390,6 +394,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--weather-location);
 }
 
 #weatherdata {
@@ -397,13 +402,15 @@ header {
   justify-content: center;
   align-items: center;
   font-weight: 500;
+  color: var(--weather-location);
 }
 #weatherDescription {
   font-weight: 500;
+  color: var(--weather-location);
 }
 
 #weatherCardFooter {
-  border-top: 2px dotted black;
+  border-top: 2px dotted var(--weather-location);
   padding-top: 2%;
 }
 /* weather api---End */
