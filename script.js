@@ -13,8 +13,10 @@ theme.onclick = function () {
 // coupon code ........................!
 
 let popupCloseButton = document.querySelector("#popupClose");
+let body = document.querySelector("body");
 popupCloseButton.addEventListener("click", () => {
   document.querySelector("#coupon-div").style.display = "none";
+  body.style.overflowY = "visible";
 });
 
 // Location and Weather..................!
